@@ -1,2 +1,2 @@
-# microcontroller_scratch
-Microcontroller from Scratch
+# devboard_scratch
+Devboard from Scratch
