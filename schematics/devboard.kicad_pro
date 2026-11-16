@@ -492,7 +492,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "microcontroller.kicad_pro",
+    "filename": "devboard.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -660,8 +660,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "microcontroller.kicad_sch",
-        "name": "microcontroller",
+        "filename": "devboard.kicad_sch",
+        "name": "devboard",
         "uuid": "bdc8a115-ca41-47df-959f-484ed408bca0"
       }
     ],
