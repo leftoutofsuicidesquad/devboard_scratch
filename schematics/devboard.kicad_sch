@@ -3501,7 +3501,10 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Regulator_Linear:NCP1117-3.3_SOT223"
+		(symbol "Regulator_Linear:MCP1700x-330xxTT"
+			(pin_names
+				(offset 0.254)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3517,7 +3520,7 @@
 					)
 				)
 			)
-			(property "Value" "NCP1117-3.3_SOT223"
+			(property "Value" "MCP1700x-330xxTT"
 				(at 0 3.175 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3528,8 +3531,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-				(at 0 5.08 0)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 0 5.715 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -3539,18 +3542,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
-				(at 2.54 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"
+			(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3561,7 +3553,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "REGULATOR LDO 3.3V"
+			(property "Description" "250mA Low Quiscent Current LDO, 3.3V output, SOT-23"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3572,7 +3564,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*TabPin2*"
+			(property "ki_keywords" "regulator linear ldo"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -3583,10 +3575,21 @@
 					)
 				)
 			)
-			(symbol "NCP1117-3.3_SOT223_0_1"
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MCP1700x-330xxTT_0_1"
 				(rectangle
-					(start -5.08 -5.08)
-					(end 5.08 1.905)
+					(start -5.08 1.905)
+					(end 5.08 -5.08)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -3596,7 +3599,7 @@
 					)
 				)
 			)
-			(symbol "NCP1117-3.3_SOT223_1_1"
+			(symbol "MCP1700x-330xxTT_1_1"
 				(pin power_in line
 					(at 0 -7.62 90)
 					(length 2.54)
@@ -8547,7 +8550,7 @@
 			(uuid "642b11a0-5439-43fe-bb08-1fc71166e2bc")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR018")
 					(unit 1)
@@ -8625,7 +8628,7 @@
 			(uuid "f9700a95-fa13-40ed-bf40-5851a43513b4")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR013")
 					(unit 1)
@@ -8703,7 +8706,7 @@
 			(uuid "75c8ff55-c26b-416e-9700-0e6828d0c01b")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR016")
 					(unit 1)
@@ -8782,7 +8785,7 @@
 			(uuid "9c2a42e5-8df9-407f-97e1-dc6ea96f50ff")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C17")
 					(unit 1)
@@ -8862,7 +8865,7 @@
 			(uuid "ee3d2cda-737e-4c7b-b126-2a7596ce6822")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "SW1")
 					(unit 1)
@@ -8997,7 +9000,7 @@
 			(uuid "365d06c2-8449-4a78-aca8-3923359ce057")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "J2")
 					(unit 1)
@@ -9076,9 +9079,92 @@
 			(uuid "75e5a0d5-b036-484f-bb55-3c4efcdeaf1f")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Regulator_Linear:MCP1700x-330xxTT")
+		(at 80.01 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f736466-bb24-43ef-aef5-ab34b3d19a10")
+		(property "Reference" "U4"
+			(at 80.01 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MCP1700x-330xxTT"
+			(at 80.01 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 80.01 36.195 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/20001826D.pdf"
+			(at 80.01 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "250mA Low Quiscent Current LDO, 3.3V output, SOT-23"
+			(at 80.01 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "7d046d89-5082-40e6-95d9-8bba302f3556")
+		)
+		(pin "2"
+			(uuid "9eaa0041-1042-476a-b884-07cbb8e93ff6")
+		)
+		(pin "1"
+			(uuid "de7bde5d-c59c-4d9e-b8e1-956927bb6b85")
+		)
+		(instances
+			(project "devboard"
+				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
+					(reference "U4")
 					(unit 1)
 				)
 			)
@@ -9154,7 +9240,7 @@
 			(uuid "3942f24f-c09f-4515-9ecf-3c506b435fca")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR04")
 					(unit 1)
@@ -9232,7 +9318,7 @@
 			(uuid "1b3daa17-da8c-4d34-bbec-59019fea5f6a")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR08")
 					(unit 1)
@@ -9311,7 +9397,7 @@
 			(uuid "36deaf75-e0db-49f7-92e0-d8477b215ff4")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "R1")
 					(unit 1)
@@ -9392,7 +9478,7 @@
 			(uuid "92cca242-875b-4faf-9d99-ecd5acadf59e")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C9")
 					(unit 1)
@@ -9470,7 +9556,7 @@
 			(uuid "701d4c37-934a-4af3-9f5d-445e6312fe38")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR017")
 					(unit 1)
@@ -9548,7 +9634,7 @@
 			(uuid "7adcba5c-684e-4cbe-aa43-50c4939ef055")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR01")
 					(unit 1)
@@ -9626,7 +9712,7 @@
 			(uuid "794aa5e4-9e3b-4e7a-8ab9-18a35fbea4f1")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR022")
 					(unit 1)
@@ -9703,7 +9789,7 @@
 			(uuid "47e148a6-12bc-4d32-bc48-fa973c5ad34b")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR09")
 					(unit 1)
@@ -9781,7 +9867,7 @@
 			(uuid "c57447a8-e989-4c82-8416-684cc5b1764e")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR03")
 					(unit 1)
@@ -9859,7 +9945,7 @@
 			(uuid "b524fd1d-e832-4c29-a648-eb2bf1f03ff7")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR05")
 					(unit 1)
@@ -9940,7 +10026,7 @@
 			(uuid "083abdee-cfc8-468f-87cb-878affc6473d")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C1")
 					(unit 1)
@@ -10021,7 +10107,7 @@
 			(uuid "c83b6a21-5e18-47ad-9ce4-e4aae26db582")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C13")
 					(unit 1)
@@ -10102,7 +10188,7 @@
 			(uuid "1ec2cc74-cde2-472e-bbb9-1d69855f93ba")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C5")
 					(unit 1)
@@ -10179,7 +10265,7 @@
 			(uuid "1e30559f-a018-45ef-b94e-ca84057c83ea")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR023")
 					(unit 1)
@@ -10315,7 +10401,7 @@
 			(uuid "35f04d36-a8f2-483c-98ac-1babbbf31800")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "J3")
 					(unit 1)
@@ -10396,7 +10482,7 @@
 			(uuid "399211da-48a5-453d-9a94-2c655d419a78")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C14")
 					(unit 1)
@@ -10477,7 +10563,7 @@
 			(uuid "4a723f5b-10b5-4fb8-b2bb-15fa1bf6f55b")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C15")
 					(unit 1)
@@ -10555,7 +10641,7 @@
 			(uuid "1191358b-a454-45e3-973f-e5e630ce586b")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR024")
 					(unit 1)
@@ -10674,7 +10760,7 @@
 			(uuid "5d229a92-9999-4b43-abeb-9b2247e06c92")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "J1")
 					(unit 1)
@@ -10753,7 +10839,7 @@
 			(uuid "e894741d-cd1f-420b-8bad-ad55630b86f0")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "R4")
 					(unit 1)
@@ -10832,7 +10918,7 @@
 			(uuid "e47ae2dc-a373-460f-ae40-27f68f104959")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "R2")
 					(unit 1)
@@ -10910,7 +10996,7 @@
 			(uuid "b9986bb0-d9ac-474c-b76c-361930544f1f")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR021")
 					(unit 1)
@@ -10991,7 +11077,7 @@
 			(uuid "01312d5a-cd4e-4d4f-8b1a-6f05dcf9eb16")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "R6")
 					(unit 1)
@@ -11068,7 +11154,7 @@
 			(uuid "f6bda165-4804-46b5-9e10-feb5997e8fdb")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR019")
 					(unit 1)
@@ -11149,7 +11235,7 @@
 			(uuid "a5e63ac0-3161-4d2b-b6bd-9ba166920ab3")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C8")
 					(unit 1)
@@ -11258,92 +11344,9 @@
 			(uuid "e6c2e18f-058d-424b-aff9-c996caf95ce4")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "Y1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Regulator_Linear:NCP1117-3.3_SOT223")
-		(at 80.01 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9493b988-9e39-4dff-9d73-b54ad099aee9")
-		(property "Reference" "U2"
-			(at 80.01 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "NCP1117-3.3_SOT223"
-			(at 80.01 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
-			(at 80.01 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF"
-			(at 82.55 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "1A Low drop-out regulator, Fixed Output 3.3V, SOT-223"
-			(at 80.01 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "c863771c-2462-4825-97ff-682b53b4dbad")
-		)
-		(pin "1"
-			(uuid "1d1e0732-1ad5-4979-9184-aa2febdc8189")
-		)
-		(pin "2"
-			(uuid "42be9eba-9745-4db0-b253-7fc3550a29a1")
-		)
-		(instances
-			(project "microcontroller"
-				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -11419,7 +11422,7 @@
 			(uuid "9c53f49a-1b73-42e6-b92e-2539a2f1a96d")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR014")
 					(unit 1)
@@ -11500,7 +11503,7 @@
 			(uuid "6fe0cc8b-8716-4714-a750-88e4e430927d")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C6")
 					(unit 1)
@@ -11581,7 +11584,7 @@
 			(uuid "e4d2d648-89ce-475a-a7a6-7f207058865b")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C4")
 					(unit 1)
@@ -11659,7 +11662,7 @@
 			(uuid "b2b673a6-20ea-4a98-845f-9f44d907a4be")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR010")
 					(unit 1)
@@ -11740,7 +11743,7 @@
 			(uuid "6efba4e3-7d95-493d-b9e9-a7515f72327a")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C7")
 					(unit 1)
@@ -11821,7 +11824,7 @@
 			(uuid "cd30f6d6-9dc6-4d46-a838-c69f4744b305")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C12")
 					(unit 1)
@@ -11898,7 +11901,7 @@
 			(uuid "7694b521-bceb-4ad3-9e44-1fee41dc10ff")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR012")
 					(unit 1)
@@ -11976,7 +11979,7 @@
 			(uuid "6a0cc54b-912a-4b1e-9a8b-0603eb57f0a9")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR07")
 					(unit 1)
@@ -12054,7 +12057,7 @@
 			(uuid "7b0afee5-7609-4ebf-b0e3-d5d3f7f673e6")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR015")
 					(unit 1)
@@ -12132,7 +12135,7 @@
 			(uuid "944dbfc6-d4be-4f66-9d9b-84fd243127f9")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR02")
 					(unit 1)
@@ -12213,7 +12216,7 @@
 			(uuid "36d861cc-a2d6-4e0f-b370-a8512b238f90")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C3")
 					(unit 1)
@@ -12294,7 +12297,7 @@
 			(uuid "3d9baee7-e35f-4b07-8917-57a1098767cb")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C16")
 					(unit 1)
@@ -12375,7 +12378,7 @@
 			(uuid "5c625a28-a188-4885-aca0-9b38fb4499d9")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C2")
 					(unit 1)
@@ -12475,7 +12478,7 @@
 			(uuid "64ceea97-fd90-4de4-926f-c926b86f4d71")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "U3")
 					(unit 1)
@@ -12556,7 +12559,7 @@
 			(uuid "74a50550-e100-444f-872f-5680a9e53c09")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C11")
 					(unit 1)
@@ -12641,7 +12644,7 @@
 			(uuid "90533fe0-817a-49bc-8b3e-3f877d91fae7")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "J4")
 					(unit 1)
@@ -12722,7 +12725,7 @@
 			(uuid "60c152c2-8ced-4985-894a-aecc806e9052")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "C10")
 					(unit 1)
@@ -12991,7 +12994,7 @@
 			(uuid "b6e663df-d640-4e3b-903c-7da0e9ec0505")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "U1")
 					(unit 1)
@@ -13070,7 +13073,7 @@
 			(uuid "bd922cd4-320d-4e11-b453-27eb4559b202")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "R3")
 					(unit 1)
@@ -13148,7 +13151,7 @@
 			(uuid "6dc6ccb3-c1d5-43d4-b7e9-8477c1d5d156")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR020")
 					(unit 1)
@@ -13227,7 +13230,7 @@
 			(uuid "c7e2df73-8cd2-40d8-a233-b19325f27db6")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "R7")
 					(unit 1)
@@ -13305,7 +13308,7 @@
 			(uuid "304e5a4f-52ab-488f-994b-2ba3e2f97534")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR06")
 					(unit 1)
@@ -13383,7 +13386,7 @@
 			(uuid "3b93af83-35d3-4a67-854a-ad3400066b44")
 		)
 		(instances
-			(project "microcontroller"
+			(project "devboard"
 				(path "/bdc8a115-ca41-47df-959f-484ed408bca0"
 					(reference "#PWR011")
 					(unit 1)

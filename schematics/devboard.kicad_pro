@@ -665,13 +665,13 @@
         "uuid": "bdc8a115-ca41-47df-959f-484ed408bca0"
       }
     ],
-    "used_designators": "#PWR1-24,C1-17,J1-4,R1-7,SW1,U2-3,Y1",
+    "used_designators": "#PWR1-24,C1-17,J1-4,R1-7,SW1,U2-4,Y1",
     "variants": []
   },
   "sheets": [
     [
       "bdc8a115-ca41-47df-959f-484ed408bca0",
-      "microcontroller"
+      "devboard"
     ]
   ],
   "text_variables": {},
